@@ -1,5 +1,9 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
+describe('Login', function(){
+  beforeEach(function(){
+    cy.visit('/')
+})
+  it('Login', function(){
+    
   })
+  
 })
