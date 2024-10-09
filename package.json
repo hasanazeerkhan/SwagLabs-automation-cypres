@@ -1,0 +1,22 @@
+{
+  "name": "swaglabs-automation-cypress",
+  "version": "1.0.0",
+  "description": "This project aims to streamline the testing process for the Swag Labs application, an open-source website, by utilizing Cypress, a modern JavaScript testing framework. The automation covers essential functionalities such as user login and other functionalities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasanazeerkhan/swaglabs-automation-cypress.git"
+  },
+  "author": "Mohammed Hasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasanazeerkhan/swaglabs-automation-cypress/issues"
+  },
+  "homepage": "https://github.com/hasanazeerkhan/swaglabs-automation-cypress#readme",
+  "dependencies": {
+    "cypress": "^13.15.0"
+  }
+}
