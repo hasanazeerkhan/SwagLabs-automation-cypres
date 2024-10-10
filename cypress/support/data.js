@@ -13,6 +13,7 @@ const credentials = {
 
 const elements = {
     title:'Swag Labs',
+    url:'https://www.saucedemo.com/',
     loginPage:{
         username:'[data-test="username"]',
         password:'[data-test="password"]',
@@ -32,6 +33,9 @@ const elements = {
         resetApp:'[data-test="reset-sidebar-link"]',
         close:'[class="bm-cross-button"]'
 
+    },
+    shoppingList:{
+        url:'https://www.saucedemo.com/inventory.html'
     },
     shoppingCart:{
         icon:'[data-test="shopping-cart-link"]',
@@ -57,9 +61,8 @@ const elements = {
     },
     filter:{
 
-    },
-    cart:{
-        url: 'https://www.saucedemo.com/cart.html'
     }
     
 }
+
+export {credentials,elements};
