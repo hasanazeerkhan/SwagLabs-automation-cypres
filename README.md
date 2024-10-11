@@ -76,11 +76,80 @@ Custom commands are defined in the `cypress/support/commands.js` file. They help
 
 ## Test Cases Covered
 
-- Title of the website should be **Swag Labs**.
-- User login with valid and invalid credentials.
-- Adding and removing items from the cart.
-- Completing the checkout process.
-- Validation of product details on the product page.
+# Test Case: Login Page
+
+## 1. URL of Login Page
+- **Test Step**: Navigate to the login page.
+- **Expected Result**: The URL should match `https://example.com/login`.
+
+## 2. Title of the Login Page
+- **Test Step**: Check the title of the login page.
+- **Expected Result**: The title should be "User Login".
+
+## 3. Accessing the Site with Correct Credentials
+- **Test Step**: Enter valid username and password and submit.
+- **Expected Result**: User should be redirected to the dashboard, and a welcome message should be displayed.
+
+## 4. Accessing the Site with Incorrect Credentials
+- **Test Step**: Enter invalid username and/or password and submit.
+- **Expected Result**: An error message "Invalid username or password" should be displayed, and the URL should remain as `https://example.com/login`.
+
+---
+
+# Test Case: Open Menu
+
+## 1. All Menu Items
+- **Test Step**: Open the menu.
+- **Expected Result**: All menu items should be visible, including "About", "Logout", "Reset App State", and "Close".
+
+## 2. Verify Clicking About Will Open a Page
+- **Test Step**: Click on the "About" menu item.
+- **Expected Result**: A new page containing information about the application should open.
+
+## 3. Verify Logging Out
+- **Test Step**: Click on the "Logout" menu item.
+- **Expected Result**: The user should be logged out and redirected to the login page.
+
+## 4. Verify Resetting App State
+- **Test Step**: Click on "Reset App State".
+- **Expected Result**: All added options should be removed, and the app should return to its default state.
+
+## 5. Verify Closing the Open Item
+- **Test Step**: Click on the "Close" button in the left pane.
+- **Expected Result**: The left pane should close successfully.
+
+---
+
+# Test Case: Filter
+
+## 1. Verify Filtering with All Three Options
+- **Test Step**: Apply each of the three filter options sequentially.
+- **Expected Result**: The displayed items should update according to the selected filter criteria.
+
+---
+
+# Test Case: Add to Cart
+
+## 1. Verify Removing from the Cart
+- **Test Step**: Add an item to the cart and then remove it.
+- **Expected Result**: The cart should be empty after removal.
+
+## 2. Verify Continue Shopping
+- **Test Step**: Click on the "Continue Shopping" button after adding an item to the cart.
+- **Expected Result**: User should be redirected back to the product listing page.
+
+## 3. Verify Checkout
+- **Test Step**: Click on the "Checkout" button in the cart.
+- **Expected Result**: The user should be taken to the checkout page.
+
+## 4. Verify Adding Information on Checkout
+- **Test Step**: Enter required information (e.g., shipping address, payment details) on the checkout page.
+- **Expected Result**: All information should be accepted without errors.
+
+## 5. Verify Cancelling Checkout
+- **Test Step**: Click on the "Cancel" button on the checkout page.
+- **Expected Result**: The user should be returned to the cart page with no changes made.
+
 
 ## Contributing
 
